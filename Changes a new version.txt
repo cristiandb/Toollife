@@ -1,0 +1,26 @@
+Cambios incluidos respecto a v0.22:
+- Cambiar la comprobacion de re-pass por uno de re-mail
+- Crear y almacenar contraseñas cifradas, enviadas por post al servidor.
+- Modificaciones en la base de datos:
+	- Cambiar el tamaño del campo password a 32 en la tabla usuarios.
+
+Proximos cambios:
+- Crear en forma de modulo todo lo que hay en el directorio modules_toollife
+- Generar un certificado valido con una entidad reconocida.
+- Incrustar imagenes en el correo.
+- Mostrar los errores fatales y errores comunes por consola con colores.
+- Tomar medidas ante un robo de identidad, mediante el robo de una cookie del tipo remember_me.
+- Cambiar el tamaño del campo serie de la base de datos remember_me a 8.
+- Si se abre multiples pestaña, se crea para ese usuario varios sockets con el servidor, de algun modo se debe
+actualizar TODAS las pestañas abiertas, y si se puede (No lo creo), solo un socket por cliente.
+- Cuando carga la pagina principal, los campos de iniciar sesion esten llenos con el usuario 
+introducido de una sesion previa
+- Dar la posibilidad de recordar la contraseña del usuario, mediante el uso del correo.
+- Si en iniciar sesion el usuario solicita ver la pagina de un usuario, entrará en modo observador 
+(no puede realizar ninguna accion tipica de un usuario activo).
+- Si no se puede enviar un correo por un registro o invalidacion de correo, se da la opcion de que el usuario
+solicite que se le envie un correo de validacion/invalidacion.
+- Añadir mas proteccion a los usuarios (cuentas blindadas). En el correo de validacion incluir una url para poder 
+invalidar la cuenta en caso de que el usuario crea que le han robado la cuenta, o tal vez incluir una url
+que permita recordar la contraseña en caso de que no se acuerde el usuario, o tal vez incluir una url
+que permita el cambio de contraseña.

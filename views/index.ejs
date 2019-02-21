@@ -1,0 +1,34 @@
+<div class='info'>
+	<p>Welcome to <%= title %></p>
+	<p>Me llamo <%= nombre %></p>
+	<p>y tengo <%= years %> años</p>
+</div>
+<div id="login">
+	<fieldset>
+	<legend>Login</legend>
+	<form id="flogin" name="formLogin" accept-charset="utf-8" method="post" action="/login" >
+		<p>Email: <input type="text" name="emailLogin" id="emailLogin" size="25" required placeholder="usuario@dominio.com"/></p>
+	 	<p>Password: <input type="password" name="passLogin" id="passLogin" size="25" required/></p>
+		<p> <input type="checkbox" name="rememberMe" <% if(isCheck){ %> CHECKED <% } %>> No cerrar sesión. <br> </p>
+	 	<p>
+	 		<input type="button" name="loginAceptar" id="loginAceptar" value="Aceptar"/>
+		</p>
+	</form>
+	</fieldset>
+</div>
+<div id="registro">
+	<fieldset>
+	<legend>Registro</legend>
+	<form id="fregistro" name="formRegistro" accept-charset="utf-8" method="post" action="/register" >
+		<p>Nombre: <input type="text" name="nombreR" id="nombreR" size="25" required/></p>
+		<p>Apellidos: <input type="text" name="apellidosR" id="apellidosR" size="25" required/></p>
+		<p>Email: <input type="text" name="emailR" id="emailR" size="25" placeholder="usuario@dominio.com" required/></p>
+		<p>Re-email: <input type="text" name="reemailR" id="reemailR" size="25" placeholder="usuario@dominio.com" required/></p>
+		<p>Password: <input type="password" name="passR" id="passR" size="25" required/></p>
+	 	<p>Acepto las condiciones<input id="checkCondiciones" name="checkCondiciones" type="checkbox"></p>
+	 	<p>
+	 		<input type="button" name="registroAceptar" id="registroAceptar" value="Aceptar"/>
+		</p>
+	</form>
+	</fieldset>
+</div>

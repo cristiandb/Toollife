@@ -1,0 +1,28 @@
+body {
+  padding: 10px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#login {
+	position: relative;
+	width: 220px;
+	float: right;
+	right: 400px;
+}
+		
+#registro {
+	position: relative;
+	width: 220px;
+	float: right;
+	left: 200px;
+}
+		
+.info {
+	position: relative;
+	width: 180px;
+	float: left;
+}

@@ -1,0 +1,12 @@
+<a href="/logout" style="position:relative; float:right; top: 0px;"> Cerrar sesión </a>
+<% if(isActive){ %>
+	<p>Welcome <%= mensaje %> to toollife!!!</p>
+<% } else { %>
+	<p> !!!Bienvenido a toollife!!! Esta cuenta necesita validacion por email, recibirá</p>
+	<p> un correo que le explicará los pasos a seguir, si en 24 horas no valida su cuenta </p>
+	<p> sera eliminada, tendra que volver a registrarse</p>
+	<p></p>
+	<p> Si no recibe un correo antes de las 24 horas, puede ser debido a que haya introducido</p>
+	<p> incorrectamente el email, en todo caso pongase en contacto con el administrador si tiene</p>
+	<p> cualquier problema </p>
+<% } %>

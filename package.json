@@ -1,0 +1,23 @@
+{
+    "name": "toollife"
+  , "version": "0.11.2"
+  , "private": true
+  , "dependencies": {
+      "express": ">= 0.0.1"
+	, "ejs": ">= 0.0.1"
+	, "url": ">= 0.0.1"
+	, "async" : ">=0.0.1"
+	, "Array.prototype.forEachAsync" : ">=0.0.1"
+	, "mysql" : ">=0.0.1"
+	, "socket.io" : ">=0.7"
+	, "connect" : ">=0.0.1"
+	, "validator" : ">=0.0.1"
+	, "nodemailer" : ">=0.0.1"
+	, "rimraf" : ">=0.0.1"
+	, "cookies" : ">=0.0.1"
+	, "keygrip" : ">=0.0.1"
+	, "crypto" : ">=0.0.1"
+	, "ansi-color" : ">=0.0.1"
+	, "connect-redis" : ">=0.0.1"
+  }
+}

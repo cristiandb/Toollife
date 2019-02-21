@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agenda</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<% if(isActive){ %>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		var socket = io.connect('http://localhost:3000/management_account');
+		var chat = io.connect('http://localhost:3000/chat');
+	</script>
+	<% } %>
+  </head>
+  <body>
+    <%- body %>
+  </body>
+</html>
